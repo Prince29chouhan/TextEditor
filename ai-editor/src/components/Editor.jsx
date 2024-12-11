@@ -8,7 +8,7 @@ import {
 import StarterKit from "@tiptap/starter-kit";
 import { toast } from "react-hot-toast";
 import BubbleMenu from "./BubbleMenu";
-import "./tiptapStyles.scss"; // Make sure to include the CSS file
+import "./tiptapStyles.scss"; 
 
 const Editor = () => {
   const [loading, setLoading] = useState(false);
@@ -143,10 +143,10 @@ const Editor = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center">
-      {/* Background Glow */}
+    
       <div className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-pink-400 opacity-30 blur-3xl"></div>
 
-      {/* Heading with Typing Animation */}
+      {/* Heading*/}
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
         <span className="typing-effect bg-gradient-to-r from-blue-900 to-teal-700 text-transparent bg-clip-text">
           AI-Powered Text Editor
@@ -192,31 +192,31 @@ const Editor = () => {
           Word Count: <span className="font-bold">{wordCount}</span>
         </p>
 
-        <div className="mt-6 flex flex-wrap justify-center space-x-4">
+        <div className="mt-6 p-2 flex flex-wrap justify-center space-x-4">
           <button
             onClick={handleRestoreOriginal}
-            className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 py-3 rounded-lg shadow-lg hover:from-gray-700 hover:to-gray-800 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
+            className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-5 py-3 rounded-lg shadow-lg hover:from-gray-700 hover:to-gray-800 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
           >
             Restore Original Text
           </button>
 
           <button
             onClick={clearText}
-            className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-lg shadow-lg hover:from-red-500 hover:to-red-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
+            className="bg-gradient-to-r from-red-600 to-red-700 text-white px-5 py-3 rounded-lg shadow-lg hover:from-red-500 hover:to-red-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
           >
             Clear Text
           </button>
 
           <button
             onClick={copyAllText}
-            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
+            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-3 rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
           >
             Copy All Text
           </button>
 
           <button
             onClick={selectAllText}
-            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-lg shadow-lg hover:from-green-500 hover:to-green-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
+            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-5 py-3 rounded-lg shadow-lg hover:from-green-500 hover:to-green-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-110"
           >
             Select All Text
           </button>
